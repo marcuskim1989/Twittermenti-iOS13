@@ -15,10 +15,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var sentimentLabel: UILabel!
 
-//    let swifter = Swifter(consumerKey: , consumerSecret: )
+    var swifter: Swifter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let ignoreThis = IgnoreThis()
+        
+        swifter = Swifter(consumerKey: ignoreThis.apiKey, consumerSecret: ignoreThis.secretApiKey)
+        
+        swifter?.searchTweet(using: "@Apple",  success: { (results, metadata) in
+            print(results)
+        }, failure: { (error) in
+            print("There was an error with the Twitter API request: \(error)")
+        })
         
     }
 

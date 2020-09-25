@@ -1,4 +1,4 @@
 *.mlproj
 *.mlmodel
 *.csv
-/misc
+IgnoreThis/

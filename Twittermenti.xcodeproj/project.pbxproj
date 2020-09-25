@@ -10,6 +10,7 @@
 		2C37D16E251DAB3A0064377A /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2C37D16D251DAB3A0064377A /* TweetSentimentClassifier.mlmodel */; };
 		2C37D187251DB42E0064377A /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C37D179251DB4070064377A /* SwifteriOS.framework */; };
 		2C37D188251DB42E0064377A /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C37D179251DB4070064377A /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C37D18D251DCB480064377A /* IgnoreThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C37D18C251DCB480064377A /* IgnoreThis.swift */; };
 		AD9EC65020FE2EF4002AE9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EC64F20FE2EF4002AE9BF /* AppDelegate.swift */; };
 		AD9EC65220FE2EF4002AE9BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EC65120FE2EF4002AE9BF /* ViewController.swift */; };
 		AD9EC65520FE2EF4002AE9BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9EC65320FE2EF4002AE9BF /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 /* Begin PBXFileReference section */
 		2C37D16D251DAB3A0064377A /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 		2C37D170251DB4070064377A /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../../../../Desktop/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		2C37D18C251DCB480064377A /* IgnoreThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreThis.swift; sourceTree = "<group>"; };
 		AD9EC64C20FE2EF4002AE9BF /* Twittermenti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twittermenti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9EC64F20FE2EF4002AE9BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD9EC65120FE2EF4002AE9BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				AD9EC65820FE2EF7002AE9BF /* LaunchScreen.storyboard */,
 				AD9EC65B20FE2EF7002AE9BF /* Info.plist */,
 				2C37D16D251DAB3A0064377A /* TweetSentimentClassifier.mlmodel */,
+				2C37D18C251DCB480064377A /* IgnoreThis.swift */,
 			);
 			path = Twittermenti;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				2C37D16E251DAB3A0064377A /* TweetSentimentClassifier.mlmodel in Sources */,
 				AD9EC65220FE2EF4002AE9BF /* ViewController.swift in Sources */,
 				AD9EC65020FE2EF4002AE9BF /* AppDelegate.swift in Sources */,
+				2C37D18D251DCB480064377A /* IgnoreThis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

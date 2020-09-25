@@ -1,4 +1,5 @@
 *.mlproj
 *.mlmodel
 *.csv
-IgnoreThis/
+Twittermenti/IgnoreThis.swift  
+

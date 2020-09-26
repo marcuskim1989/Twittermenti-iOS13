@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     let sentimentClassifier = TweetSentimentClassifier()
     
+    let tweetCount = 100
+    
     var swifter: Swifter?
     
     override func viewDidLoad() {
@@ -35,11 +37,11 @@ class ViewController: UIViewController {
         if let searchText = textField.text {
             
             
-            swifter?.searchTweet(using: "@Apple", lang: "en", count: 100, tweetMode: .extended,success: { (results, metadata) in
+            swifter?.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended,success: { (results, metadata) in
                 
                 var tweets = [TweetSentimentClassifierInput]()
                 
-                for i in 0..<100 {
+                for i in 0..<self.tweetCount {
                     
                     if let tweet = results[i]["full_text"].string {
                         let tweetForClassification = TweetSentimentClassifierInput(text: tweet)
@@ -61,6 +63,8 @@ class ViewController: UIViewController {
                             sentimentScore -= 1
                         }
                     }
+                    
+                    print(sentimentScore)
                     
                     if sentimentScore > 20 {
                         self.sentimentLabel.text = "😍"

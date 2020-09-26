@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         swifter = Swifter(consumerKey: ignoreThis.apiKey, consumerSecret: ignoreThis.secretApiKey)
         
-        swifter?.searchTweet(using: "@Apple",  success: { (results, metadata) in
+        swifter?.searchTweet(using: "@Apple", lang: "en", count: 100, tweetMode: .extended,success: { (results, metadata) in
             print(results)
         }, failure: { (error) in
             print("There was an error with the Twitter API request: \(error)")
